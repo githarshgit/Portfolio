@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-3 px-4 py-2 border border-[#00FF41] text-[#00FF41] font-terminal text-xs tracking-widest uppercase mb-4"
         >
-          <Zap size={14} className="animate-pulse" /> Core_Frequency: 4.2GHz // Status: Optimized
+          <Zap size={14} className="animate-pulse" /> IoT and Software Developer
         </motion.div>
 
         <div className="relative w-full flex flex-col items-center">
@@ -119,19 +119,19 @@ const Hero: React.FC = () => {
           <div className="space-y-6">
 
             <h4 className="font-terminal text-[#00FF41] text-sm uppercase tracking-widest">
-              Compiler_Stack
+              Tech_Stack
             </h4>
 
             {/* CORE SYSTEMS */}
             <ul className="font-terminal text-sm text-[#00FF41]/80 space-y-1">
-              <li>{'>'} EMBEDDED_SYSTEMS // FIRMWARE_DEV // RTOS</li>
+              <li>{'>'} EMBEDDED_SYSTEMS // FIRMWARE_DEV // </li>
               <li>{'>'} REAL_TIME_SYSTEMS // SENSOR_INTERFACING</li>
             </ul>
 
             {/* HARDWARE */}
             <ul className="font-terminal text-sm text-[#00FF41]/70 space-y-1">
               <li>{'>'} ARDUINO // ESP32 // NODEMCU // RP2040</li>
-              <li>{'>'} PCB_DESIGN // CIRCUIT_DESIGN</li>
+              <li>{'>'} PCB_DESIGN // CIRCUIT_DESIGN //3D_PRINTING</li>
             </ul>
 
             {/* LANGUAGES */}
@@ -149,7 +149,7 @@ const Hero: React.FC = () => {
             <ul className="font-terminal text-sm text-[#00FF41]/70 space-y-1">
               <li>{'>'} EDGE_AI // MACHINE_LEARNING</li>
               <li>{'>'} COMPUTER_VISION // DATA_ANALYTICS</li>
-              <li>{'>'} SIGNAL_PROCESSING</li>
+
             </ul>
 
             {/* APPLICATION & BACKEND */}
@@ -160,7 +160,7 @@ const Hero: React.FC = () => {
 
             {/* OS */}
             <ul className="font-terminal text-sm text-[#00FF41]/70 space-y-1">
-              <li>{'>'} EMBEDDED_LINUX // LINUX</li>
+
               <li>{'>'} CLOUD_INTEGRATION</li>
             </ul>
 
@@ -171,72 +171,71 @@ const Hero: React.FC = () => {
   );
 };
 
-const SkillsSection: React.FC = () => {
-  const allSkills = [
-    "Embedded Systems",
-    "Firmware Development",
-    "RTOS",
-    "Real-Time Systems",
+// const SkillsSection: React.FC = () => {
+//   const allSkills = [
+//     "Embedded Systems",
+//     "Firmware Development",
+//     "RTOS",
+//     "Real-Time Systems",
 
-    "PCB Design",
-    "Circuit Design",
-    "Sensor Interfacing",
+//     "PCB Design",
+//     "Circuit Design",
+//     "Sensor Interfacing",
 
-    "Arduino",
-    "ESP32",
-    "NodeMCU",
-    "RP2040",
+//     "Arduino",
+//     "ESP32",
+//     "NodeMCU",
+//     "RP2040",
 
-    "C++",
-    "Python",
-    "Dart",
+//     "C++",
+//     "Python",
+//     "Dart",
 
-    "IoT Platforms",
-    "BLE",
-    "MQTT",
-    "WiFi",
-    "AWS IoT",
-    "Firebase",
+//     "IoT Platforms",
+//     "BLE",
+//     "MQTT",
+//     "WiFi",
+//     "AWS IoT",
+//     "Firebase",
 
-    "Edge AI",
-    "Machine Learning",
-    "Computer Vision",
-    "Signal Processing",
-    "Data Analytics",
+//     "Edge AI",
+//     "Machine Learning",
+//     "Computer Vision",
+//     "Data Analytics",
 
-    "Flutter",
-    "Mobile Dashboards",
+//     "Flutter",
+//     "Mobile Dashboards",
 
-    "FastAPI",
-    "Flask",
-    "REST APIs",
+//     "FastAPI",
+//     "Flask",
+//     "REST APIs",
 
-    "Embedded Linux",
-    "Linux",
-    "Cloud Integration"
-  ]
 
-  return (
-    <section className="py-24 px-6 md:px-12">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex flex-wrap gap-4 justify-center">
-          {allSkills.map((skill, i) => (
-            <motion.div
-              key={skill}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="px-6 py-2.5 border border-white rounded-full text-white font-ui text-sm md:text-base font-medium tracking-tight whitespace-nowrap hover:bg-white hover:text-black transition-colors duration-300 cursor-default"
-            >
-              {skill}
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+//     "Linux",
+//     "Cloud Integration"
+//   ]
+
+//   return (
+//     <section className="py-24 px-6 md:px-12">
+//       <div className="max-w-screen-xl mx-auto">
+//         <div className="flex flex-wrap gap-4 justify-center">
+//           {allSkills.map((skill, i) => (
+//             <motion.div
+//               key={skill}
+//               initial={{ opacity: 0, y: 10 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ delay: i * 0.05, duration: 0.4 }}
+//               className="px-6 py-2.5 border border-white rounded-full text-white font-ui text-sm md:text-base font-medium tracking-tight whitespace-nowrap hover:bg-white hover:text-black transition-colors duration-300 cursor-default"
+//             >
+//               {skill}
+//             </motion.div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 
 const ProjectSection: React.FC = () => {
   return (
@@ -245,10 +244,6 @@ const ProjectSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <h2 className="font-brutalist text-6xl md:text-8xl font-black text-white mb-4">PROJECTS</h2>
-            <div className="flex items-center gap-3 text-[#00FF41] font-terminal text-sm">
-              <ShieldCheck size={20} />
-              <span>SECURE_ARCHIVE_ACCESS </span>
-            </div>
           </div>
 
         </div>
@@ -306,12 +301,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="mt-24 pt-8 border-t border-[#00FF41]/10 flex flex-col md:flex-row justify-between items-center text-[10px] font-terminal text-[#00FF41]/40 uppercase tracking-widest">
-        <span>© 2025 HARSH KUMAR PROTOCOL // ALL RIGHTS RESERVED</span>
-        <div className="flex gap-6 mt-4 md:mt-0">
-          <span>PORT: 8080 // 443</span>
-          <span>LOCATION: DEPLOYED</span>
-          <span>AUTH: VERIFIED</span>
-        </div>
+        <span>© 2025 HARSH KUMAR // ALL RIGHTS RESERVED</span>
       </div>
     </footer>
   );
@@ -332,29 +322,27 @@ const Home: React.FC = () => {
         style={{ scaleX }}
       />
       <Hero />
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       <ProjectSection />
 
-      {/* Achievements Section */}
+      {/* Achievements Section
       <section className="py-24 px-6 md:px-12 border-t border-[#00FF41]/10">
         <div className="max-w-screen-xl mx-auto">
-          <h2 className="font-brutalist text-4xl md:text-6xl font-black text-white mb-16">SYSTEM_ACHIEVEMENTS</h2>
+          <h2 className="font-brutalist text-4xl md:text-6xl font-black text-white mb-16">ACHIEVEMENTS</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="border border-[#00FF41]/20 p-8 hover:bg-[#00FF41]/5 transition-all">
-              <span className="font-terminal text-[#00FF41] text-xs">AWD_01</span>
               <h3 className="font-brutalist text-2xl text-white mt-2">SMART INDIA HACKATHON</h3>
               <p className="font-ui text-gray-400 mt-4">Finalist (SIH) 2024 & 2025. Ranked among top teams from 300+ nationwide participants.</p>
             </div>
             <div className="border border-[#00FF41]/20 p-8 hover:bg-[#00FF41]/5 transition-all">
-              <span className="font-terminal text-[#00FF41] text-xs">CERT_01</span>
               <h3 className="font-brutalist text-2xl text-white mt-2">DEEP REINFORCEMENT LEARNING</h3>
               <p className="font-ui text-gray-400 mt-4">Advanced certification in Python-based DRL (2025) and PyTorch integration via Infosys.</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-24 px-6 md:px-12">
+      {/* <section className="py-24 px-6 md:px-12">
         <div className="max-w-screen-xl mx-auto bg-[#00FF41]/5 border border-[#00FF41]/20 p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 space-y-6">
             <h2 className="font-brutalist text-5xl md:text-7xl font-black text-white uppercase">THE_ARCHITECT</h2>
@@ -375,10 +363,10 @@ const Home: React.FC = () => {
           <div className="w-full md:w-1/3 aspect-square relative">
             <div className="absolute inset-0 border border-[#00FF41] -translate-x-4 -translate-y-4"></div>
             <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Architect" className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" />
-            <div className="absolute bottom-4 left-4 font-terminal text-[10px] bg-black text-[#00FF41] px-2 py-1">IDENTITY_UID: 0x99AE</div>
+
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
       <Terminal />
     </div>

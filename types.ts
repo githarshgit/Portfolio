@@ -5,9 +5,9 @@ export interface Project {
   client: string;
   category: string;
   description: string;
-  image: string;
+  images: string[];  // Array of image paths
   tags: string[];
-  status: 'CLASSIFIED' | 'DECLASSIFIED' | 'RESTRICTED';
+  status: 'COMPLETED' | 'IN_PROGRESS' | 'ARCHIVED';
 }
 
 export interface TerminalMessage {

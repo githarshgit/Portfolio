@@ -3,54 +3,73 @@ import { Project } from './types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'FILE_01',
+    id: '01',
     title: 'AIR_QUALITY_STATION',
-    client: 'ENVIRONMENTAL INTELLIGENCE',
+    client: 'IoT Project',
     category: 'IOT / EMBEDDED',
     description: 'Portable multi-sensor monitoring station featuring a custom PCB-based 7-sensor array. Integrated Wi-Fi Access Point server for real-time JSON streaming and Flutter-based visualization.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200',
+    images: [
+      '/projects/air-quality/1.jpg',
+      '/projects/air-quality/2.jpg',
+      '/projects/air-quality/3.jpg'
+    ],
     tags: ['Arduino Nano RP2040', 'Custom PCB', 'Flutter', '3D Printing'],
-    status: 'RESTRICTED'
+    status: 'COMPLETED'
   },
   {
-    id: 'FILE_02',
+    id: '02',
     title: 'FACIAL_RECOGNITION_AI',
-    client: 'SECURITY PROTOCOLS',
+    client: 'AI/ML Project',
     category: 'MACHINE LEARNING',
     description: 'AI-powered attendance system using DeepFace for real-time facial recognition via webcam. Features role-based authentication and interactive Plotly dashboards.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200',
+    images: [
+      '/projects/facial-recognition/1.jpg',
+      '/projects/facial-recognition/2.jpg'
+    ],
     tags: ['Flask', 'OpenCV', 'DeepFace', 'Firebase'],
-    status: 'CLASSIFIED'
+    status: 'COMPLETED'
   },
   {
-    id: 'FILE_03',
+    id: '03',
     title: 'HEALTH_WEARABLE',
-    client: 'BIOMEDICAL SYSTEMS',
+    client: 'Wearable Tech',
     category: 'WEARABLE TECH',
     description: 'Physiological data platform capturing ECG, EEG, and GSR. Developed MicroPython firmware for real-time sensor fusion and MQTT telemetry to a Flutter mobile interface.',
-    image: 'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=1200',
+    images: [
+      '/projects/hms/20250907_200928.jpg',
+      '/projects/hms/20250907_201541.jpg',
+      '/projects/hms/20250907_205432.jpg',
+      '/projects/hms/20250907_205517.jpg',
+      '/projects/hms/20250907_205635.jpg'
+    ],
     tags: ['MicroPython', 'MQTT', 'Arduino Nano', 'Custom PCB'],
-    status: 'DECLASSIFIED'
+    status: 'COMPLETED'
   },
   {
-    id: 'FILE_04',
+    id: '04',
     title: 'DRONE_FREQUENCY_HOPPING',
-    client: 'RF COMMUNICATIONS',
+    client: 'RF Communications',
     category: 'AEROSPACE LOGIC',
     description: 'Developed a bidirectional NRF24L01 communication system with dynamic frequency hopping (1-50 channels) to ensure robust data transmission in contested RF environments.',
-    image: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1200',
+    images: [
+      '/projects/drone/1.jpg',
+      '/projects/drone/2.jpg'
+    ],
     tags: ['Raspberry Pi', 'CircuitPython', 'NRF24L01', 'GPS'],
-    status: 'RESTRICTED'
+    status: 'IN_PROGRESS'
   },
   {
-    id: 'FILE_05',
+    id: '05',
     title: 'GARDENING_COMPANION',
-    client: 'BOTANICAL AUTOMATION',
+    client: 'IoT / AI',
     category: 'IOT / AI',
     description: 'ESP32-based IoT system with Python ML crop recommendation engine. Integrates WeatherAPI and OpenStreetMap for intelligent irrigation and environmental tracking.',
-    image: 'https://images.unsplash.com/photo-1585336261022-69c667abe16a?auto=format&fit=crop&q=80&w=1200',
+    images: [
+      '/projects/gardening/1.jpg',
+      '/projects/gardening/2.jpg'
+    ],
     tags: ['ESP32', 'Python ML', 'Flutter', 'Railway'],
-    status: 'DECLASSIFIED'
+    status: 'COMPLETED'
   }
 ];
 
