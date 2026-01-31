@@ -46,6 +46,8 @@ export const PROJECTS: Project[] = [
     status: 'COMPLETED'
   },
   {
+
+    
     id: '04',
     title: 'DRONE FREQUENCY HOPPING',
     client: 'RF Communications',
