@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
             </ul>
 
             <ul className="font-terminal text-[10px] md:text-sm text-[#00FF41]/70 space-y-1">
-              <li>{'>'} ARDUINO // ESP32 // RP2040</li>
+              <li>{'>'} ARDUINO // ESP32 // RP2040 // Raspberry Pi</li>
               <li>{'>'} PCB DESIGN // 3D PRINTING</li>
             </ul>
 
